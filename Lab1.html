@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab1/doanhcvph22977</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        nav {
+            padding-top: 50px;
+
+        }
+
+        .title-section:before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #f26522;
+            margin-right: 10px;
+            border-radius: 2px;
+        }
+
+        p {
+            color: #BEBEBE;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row"><img src="./Banner.png" alt=""></header>
+        <nav class="row" style="color: #2E3192; text-align: center;">
+            <div class="col-mb-4"></div>
+            <div class="col-mb-4">
+                <h1><b> PHIẾU ĐĂNG KÝ HỌC</b></h1>
+            </div>
+        </nav>
+        <br>
+        <div class="row">
+            <aside class="col-1">
+            </aside>
+            <article class="col-10">
+                <div class="row">
+                    <div class="col-mb-4" style="color: #2E3192;">
+                        <h4 class="title-section"><b>THÔNG TIN THÍ SINH</b></h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3" style="text-align: left;">
+                        <label for="exampleInput" class="form-label"><b>Họ và tên</b></label>
+                        <input type="tel" class="form-control" placeholder="Họ và tên" />
+                    </div>
+                    <div class="col-md-3" style="text-align: left;">
+                        <label for="exampleInput" class="form-label"><b>Ngày sinh</b></label>
+                        <input type="tel" class="form-control" placeholder="DD/MM/YYYY" />
+                    </div>
+                    <div class="col-md-3" style="text-align: left;">
+                        <label for="exampleInput" class="form-label"><b>Giới tính</b></label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Nam</option>
+                            <option value="1">Nữ</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3" style="text-align: left;">
+                        <label for="exampleInput" class="form-label"><b>Dân tộc</b></label>
+                        <input type="tel" class="form-control" placeholder="Kinh" />
+                    </div>
+                </div>
+                <br>
+                <!-- !row2 -->
+                <div class="row">
+                    <div class="col-md-4" style="text-align: left;">
+                        <label for="exampleInput" class="form-label"><b>Số CCCD/Chứng minh nhân dân</b></label>
+                        <input type="tel" class="form-control" placeholder="0123456789" />
+                    </div>
+                    <div class="col-md-4" style="text-align: left;">
+                        <label for="exampleInput" class="form-label"><b>Ngày cấp</b></label>
+                        <input type="tel" class="form-control" placeholder="DD/MM/YYYY" />
+                    </div>
+                    <div class="col-md-4" style="text-align: left;">
+                        <label for="exampleInput" class="form-label"><b>Nơi cấp</b></label>
+                        <input type="tel" class="form-control" placeholder="Hà Nội, Hồ Chí Minh,...." />
+                    </div>
+
+                </div>
+                <br>
+                <!-- !row3 -->
+                <div class="row">
+                    <label for="exampleInput" class="form-label"><b>Hộ khẩu thường trú (Điền thông tin đầy đủ như trong
+                            sổ hộ khẩu)</b></label>
+                    <div class="col-md-3" style="text-align: left;">
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="">Chọn tỉnh/thành phố</option>
+                            <option value="Thành phố Hà Nội">Thành phố Hà Nội</option>
+                            <option value="Tỉnh Hà Giang">Tỉnh Hà Giang</option>
+                            <option value="Tỉnh Cao Bằng">Tỉnh Cao Bằng</option>
+                            <option value="Tỉnh Bắc Kạn">Tỉnh Bắc Kạn</option>
+                            <option value="Tỉnh Tuyên Quang">Tỉnh Tuyên Quang</option>
+                            <option value="Tỉnh Lào Cai">Tỉnh Lào Cai</option>
+                            <option value="Tỉnh Điện Biên">Tỉnh Điện Biên</option>
+                            <option value="Tỉnh Lai Châu">Tỉnh Lai Châu</option>
+                            <option value="Tỉnh Sơn La">Tỉnh Sơn La</option>
+                            <option value="Tỉnh Yên Bái">Tỉnh Yên Bái</option>
+                            <option value="Tỉnh Hoà Bình">Tỉnh Hoà Bình</option>
+                            <option value="Tỉnh Thái Nguyên">Tỉnh Thái Nguyên</option>
+                            <option value="Tỉnh Lạng Sơn">Tỉnh Lạng Sơn</option>
+                            <option value="Tỉnh Quảng Ninh">Tỉnh Quảng Ninh</option>
+                            <option value="Tỉnh Bắc Giang">Tỉnh Bắc Giang</option>
+                            <option value="Tỉnh Phú Thọ">Tỉnh Phú Thọ</option>
+                            <option value="Tỉnh Vĩnh Phúc">Tỉnh Vĩnh Phúc</option>
+                            <option value="Tỉnh Bắc Ninh">Tỉnh Bắc Ninh</option>
+                            <option value="Tỉnh Hải Dương">Tỉnh Hải Dương</option>
+                            <option value="Thành phố Hải Phòng">Thành phố Hải Phòng</option>
+                            <option value="Tỉnh Hưng Yên">Tỉnh Hưng Yên</option>
+                            <option value="Tỉnh Thái Bình">Tỉnh Thái Bình</option>
+                            <option value="Tỉnh Hà Nam">Tỉnh Hà Nam</option>
+                            <option value="Tỉnh Nam Định">Tỉnh Nam Định</option>
+                            <option value="Tỉnh Ninh Bình">Tỉnh Ninh Bình</option>
+                            <option value="Tỉnh Thanh Hóa">Tỉnh Thanh Hóa</option>
+                            <option value="Tỉnh Nghệ An">Tỉnh Nghệ An</option>
+                            <option value="Tỉnh Hà Tĩnh">Tỉnh Hà Tĩnh</option>
+                            <option value="Tỉnh Quảng Bình">Tỉnh Quảng Bình</option>
+                            <option value="Tỉnh Quảng Trị">Tỉnh Quảng Trị</option>
+                            <option value="Tỉnh Thừa Thiên Huế">Tỉnh Thừa Thiên Huế</option>
+                            <option value="Thành phố Đà Nẵng">Thành phố Đà Nẵng</option>
+                            <option value="Tỉnh Quảng Nam">Tỉnh Quảng Nam</option>
+                            <option value="Tỉnh Quảng Ngãi">Tỉnh Quảng Ngãi</option>
+                            <option value="Tỉnh Bình Định">Tỉnh Bình Định</option>
+                            <option value="Tỉnh Phú Yên">Tỉnh Phú Yên</option>
+                            <option value="Tỉnh Khánh Hòa">Tỉnh Khánh Hòa</option>
+                            <option value="Tỉnh Ninh Thuận">Tỉnh Ninh Thuận</option>
+                            <option value="Tỉnh Bình Thuận">Tỉnh Bình Thuận</option>
+                            <option value="Tỉnh Kon Tum">Tỉnh Kon Tum</option>
+                            <option value="Tỉnh Gia Lai">Tỉnh Gia Lai</option>
+                            <option value="Tỉnh Đắk Lắk">Tỉnh Đắk Lắk</option>
+                            <option value="Tỉnh Đắk Nông">Tỉnh Đắk Nông</option>
+                            <option value="Tỉnh Lâm Đồng">Tỉnh Lâm Đồng</option>
+                            <option value="Tỉnh Bình Phước">Tỉnh Bình Phước</option>
+                            <option value="Tỉnh Tây Ninh">Tỉnh Tây Ninh</option>
+                            <option value="Tỉnh Bình Dương">Tỉnh Bình Dương</option>
+                            <option value="Tỉnh Đồng Nai">Tỉnh Đồng Nai</option>
+                            <option value="Tỉnh Bà Rịa - Vũng Tàu">Tỉnh Bà Rịa - Vũng Tàu</option>
+                            <option value="Thành phố Hồ Chí Minh">Thành phố Hồ Chí Minh</option>
+                            <option value="Tỉnh Long An">Tỉnh Long An</option>
+                            <option value="Tỉnh Tiền Giang">Tỉnh Tiền Giang</option>
+                            <option value="Tỉnh Bến Tre">Tỉnh Bến Tre</option>
+                            <option value="Tỉnh Trà Vinh">Tỉnh Trà Vinh</option>
+                            <option value="Tỉnh Vĩnh Long">Tỉnh Vĩnh Long</option>
+                            <option value="Tỉnh Đồng Tháp">Tỉnh Đồng Tháp</option>
+                            <option value="Tỉnh An Giang">Tỉnh An Giang</option>
+                            <option value="Tỉnh Kiên Giang">Tỉnh Kiên Giang</option>
+                            <option value="Thành phố Cần Thơ">Thành phố Cần Thơ</option>
+                            <option value="Tỉnh Hậu Giang">Tỉnh Hậu Giang</option>
+                            <option value="Tỉnh Sóc Trăng">Tỉnh Sóc Trăng</option>
+                            <option value="Tỉnh Bạc Liêu">Tỉnh Bạc Liêu</option>
+                            <option value="Tỉnh Cà Mau">Tỉnh Cà Mau</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3" style="text-align: left;">
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="" selected="selected" class="gf_placeholder">Quận/Huyện</option>
+                            <option value="Hà Nội">Hà Nội</option>
+                            <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
+                            <option value="Đà Nẵng">Đà Nẵng</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3" style="text-align: left;">
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="" selected="selected" class="gf_placeholder">Xã/Phường/Thị Trấn</option>
+                            <option value="Hà Nội">Hà Nội</option>
+                            <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
+                            <option value="Đà Nẵng">Đà Nẵng</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3" style="text-align: left;">
+                        <input type="tel" class="form-control" placeholder="Số nhà, đường, ngõ, xóm" />
+                    </div>
+
+                </div>
+                <br>
+                <!-- !row4 -->
+                <div class="row">
+
+                    <div class="col-md-3" style="text-align: left;">
+                        <label for="exampleInput" class="form-label"><b>Số điện thoại thí sinh</b></label>
+                        <input type="tel" class="form-control" placeholder="0987654321" />
+                    </div>
+                    <div class="col-md-3" style="text-align: left;">
+                        <label for="exampleInput" class="form-label"><b>Email thí sinh</b></label>
+                        <input type="tel" class="form-control" placeholder="example@gmail.com" />
+                    </div>
+                    <div class="col-md-3" style="text-align: left;">
+                        <label for="exampleInput" class="form-label"><b>Họ tên phụ huynh/người bảo trợ</b></label>
+                        <input type="tel" class="form-control" placeholder="Họ và tên" />
+                    </div>
+
+                    <div class="col-md-3" style="text-align: left;">
+                        <label for="exampleInput" class="form-label"><b>Số điện thoại phụ huynh/người bảo
+                                trợ</b></label>
+                        <input type="tel" class="form-control" placeholder="0987654321" />
+                    </div>
+                </div>
+                <br>
+                <!-- !THÔNG TIN ĐĂNG KÝ TRƯỜNG CAO ĐẲNG FPT POLYTECHNIC -->
+                <div class="row">
+                    <div class="col-mb-4" style="color: #2E3192;">
+                        <h4 class="title-section"><b>THÔNG TIN ĐĂNG KÝ TRƯỜNG CAO ĐẲNG FPT POLYTECHNIC</b></h4>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6" style="text-align: left;">
+                        <label for="exampleInput" class="form-label"><b>Cơ sở nhập học</b></label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="HN">Hà Nội</option>
+                            <option value="HP">Hải Phòng</option>
+                            <option value="HNA">Hà Nam</option>
+                            <option value="TH">Thanh Hoá</option>
+                            <option value="HCM">TP. Hồ Chí Minh</option>
+                            <option value="QN">Quy Nhơn</option>
+                            <option value="DN">Đà Nẵng</option>
+                            <option value="TN">Tây Nguyên</option>
+                            <option value="CT">Cần Thơ</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3" style="text-align: left;">
+                        <label for="exampleInput" class="form-label"><b>Nguyện vọng thứ nhất</b></label>
+                    </div>
+                    <div class="col-md-3" style="text-align: left;">
+                    </div>
+                    <div class="col-md-3" style="text-align: left;">
+                        <label for="exampleInput" class="form-label"><b>Nguyện vọng thứ hai</b></label>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3" style="text-align: left;">
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="">Chuyên ngành</option>
+                            <option value="Phát triển phần mềm">Phát triển phần mềm</option>
+                            <option value="Lập trình Web">Lập trình Web</option>
+                            <option value="Lập trình Mobile">Lập trình Mobile</option>
+                            <option value="Ứng dụng phần mềm">Ứng dụng phần mềm</option>
+                            <option value="Xử lý dữ liệu">Xử lý dữ liệu</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
+                            <option value="Marketing &amp; sale">Marketing &amp; sale</option>
+                            <option value="Quan hệ công chúng (PR) &amp; tổ chức sự kiện">Quan hệ công chúng
+                                (PR)
+                                &amp; tổ chức sự kiện</option>
+                            <option value="Quản trị khách sạn">Quản trị khách sạn</option>
+                            <option value="Quản trị nhà hàng">Quản trị nhà hàng</option>
+                            <option value="Logistics">Logistics</option>
+                            <option value="Công nghệ kỹ thuật điện, điện tử">Công nghệ kỹ thuật điện, điện tử
+                            </option>
+                            <option value="Điện công nghiệp">Điện công nghiệp</option>
+                            <option value="CN kỹ thuật điều khiển &amp; tự động hóa">CN kỹ thuật điều khiển
+                                &amp; tự
+                                động hóa</option>
+                            <option value="Công nghệ kỹ thuật cơ khí">Công nghệ kỹ thuật cơ khí</option>
+                            <option value="Thiết kế đồ họa">Thiết kế đồ họa</option>
+                            <option value="Hướng dẫn du lịch">Hướng dẫn du lịch</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3" style="text-align: left;">
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="" selected="selected" class="gf_placeholder">Ngành</option>
+                            <option value="Công nghệ thông tin">Công nghệ thông tin</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3" style="text-align: left;">
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="">Chuyên ngành</option>
+                            <option value="Phát triển phần mềm">Phát triển phần mềm</option>
+                            <option value="Lập trình Web">Lập trình Web</option>
+                            <option value="Lập trình Mobile">Lập trình Mobile</option>
+                            <option value="Ứng dụng phần mềm">Ứng dụng phần mềm</option>
+                            <option value="Xử lý dữ liệu">Xử lý dữ liệu</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
+                            <option value="Marketing &amp; sale">Marketing &amp; sale</option>
+                            <option value="Quan hệ công chúng (PR) &amp; tổ chức sự kiện">Quan hệ công chúng
+                                (PR)
+                                &amp; tổ chức sự kiện</option>
+                            <option value="Quản trị khách sạn">Quản trị khách sạn</option>
+                            <option value="Quản trị nhà hàng">Quản trị nhà hàng</option>
+                            <option value="Logistics">Logistics</option>
+                            <option value="Công nghệ kỹ thuật điện, điện tử">Công nghệ kỹ thuật điện, điện tử
+                            </option>
+                            <option value="Điện công nghiệp">Điện công nghiệp</option>
+                            <option value="CN kỹ thuật điều khiển &amp; tự động hóa">CN kỹ thuật điều khiển
+                                &amp; tự
+                                động hóa</option>
+                            <option value="Công nghệ kỹ thuật cơ khí">Công nghệ kỹ thuật cơ khí</option>
+                            <option value="Thiết kế đồ họa">Thiết kế đồ họa</option>
+                            <option value="Hướng dẫn du lịch">Hướng dẫn du lịch</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3" style="text-align: left;">
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="" selected="selected" class="gf_placeholder">Ngành</option>
+                            <option value="Công nghệ thông tin">Công nghệ thông tin</option>
+                        </select>
+                    </div>
+
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6" style="text-align: left;">
+                        <label for="exampleInput" class="form-label"><b>Năm tốt nghiệp THPT hoặc tương đương</b></label>
+                        <select class="form-select" aria-label="Default select example">
+                            aria-invalid="false">
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6" style="text-align: left;">
+                        <label for="exampleInput" class="form-label"><b>Trường tốt nghiệp THPT hoặc tương
+                                đương</b></label>
+                        <input type="tel" class="form-control" placeholder="Trường" />
+                    </div>
+                </div>
+                <!-- !row Nơi tốt nghiệp -->
+                <br>
+                <div class="row">
+                    <label for="exampleInput" class="form-label"><b>Nơi tốt nghiệp</b></label>
+                    <div class="row">
+                        <div class="col-md-4" style="text-align: left;">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="">Chọn tỉnh/thành phố</option>
+                                <option value="Thành phố Hà Nội">Thành phố Hà Nội</option>
+                                <option value="Tỉnh Hà Giang">Tỉnh Hà Giang</option>
+                                <option value="Tỉnh Cao Bằng">Tỉnh Cao Bằng</option>
+                                <option value="Tỉnh Bắc Kạn">Tỉnh Bắc Kạn</option>
+                                <option value="Tỉnh Tuyên Quang">Tỉnh Tuyên Quang</option>
+                                <option value="Tỉnh Lào Cai">Tỉnh Lào Cai</option>
+                                <option value="Tỉnh Điện Biên">Tỉnh Điện Biên</option>
+                                <option value="Tỉnh Lai Châu">Tỉnh Lai Châu</option>
+                                <option value="Tỉnh Sơn La">Tỉnh Sơn La</option>
+                                <option value="Tỉnh Yên Bái">Tỉnh Yên Bái</option>
+                                <option value="Tỉnh Hoà Bình">Tỉnh Hoà Bình</option>
+                                <option value="Tỉnh Thái Nguyên">Tỉnh Thái Nguyên</option>
+                                <option value="Tỉnh Lạng Sơn">Tỉnh Lạng Sơn</option>
+                                <option value="Tỉnh Quảng Ninh">Tỉnh Quảng Ninh</option>
+                                <option value="Tỉnh Bắc Giang">Tỉnh Bắc Giang</option>
+                                <option value="Tỉnh Phú Thọ">Tỉnh Phú Thọ</option>
+                                <option value="Tỉnh Vĩnh Phúc">Tỉnh Vĩnh Phúc</option>
+                                <option value="Tỉnh Bắc Ninh">Tỉnh Bắc Ninh</option>
+                                <option value="Tỉnh Hải Dương">Tỉnh Hải Dương</option>
+                                <option value="Thành phố Hải Phòng">Thành phố Hải Phòng</option>
+                                <option value="Tỉnh Hưng Yên">Tỉnh Hưng Yên</option>
+                                <option value="Tỉnh Thái Bình">Tỉnh Thái Bình</option>
+                                <option value="Tỉnh Hà Nam">Tỉnh Hà Nam</option>
+                                <option value="Tỉnh Nam Định">Tỉnh Nam Định</option>
+                                <option value="Tỉnh Ninh Bình">Tỉnh Ninh Bình</option>
+                                <option value="Tỉnh Thanh Hóa">Tỉnh Thanh Hóa</option>
+                                <option value="Tỉnh Nghệ An">Tỉnh Nghệ An</option>
+                                <option value="Tỉnh Hà Tĩnh">Tỉnh Hà Tĩnh</option>
+                                <option value="Tỉnh Quảng Bình">Tỉnh Quảng Bình</option>
+                                <option value="Tỉnh Quảng Trị">Tỉnh Quảng Trị</option>
+                                <option value="Tỉnh Thừa Thiên Huế">Tỉnh Thừa Thiên Huế</option>
+                                <option value="Thành phố Đà Nẵng">Thành phố Đà Nẵng</option>
+                                <option value="Tỉnh Quảng Nam">Tỉnh Quảng Nam</option>
+                                <option value="Tỉnh Quảng Ngãi">Tỉnh Quảng Ngãi</option>
+                                <option value="Tỉnh Bình Định">Tỉnh Bình Định</option>
+                                <option value="Tỉnh Phú Yên">Tỉnh Phú Yên</option>
+                                <option value="Tỉnh Khánh Hòa">Tỉnh Khánh Hòa</option>
+                                <option value="Tỉnh Ninh Thuận">Tỉnh Ninh Thuận</option>
+                                <option value="Tỉnh Bình Thuận">Tỉnh Bình Thuận</option>
+                                <option value="Tỉnh Kon Tum">Tỉnh Kon Tum</option>
+                                <option value="Tỉnh Gia Lai">Tỉnh Gia Lai</option>
+                                <option value="Tỉnh Đắk Lắk">Tỉnh Đắk Lắk</option>
+                                <option value="Tỉnh Đắk Nông">Tỉnh Đắk Nông</option>
+                                <option value="Tỉnh Lâm Đồng">Tỉnh Lâm Đồng</option>
+                                <option value="Tỉnh Bình Phước">Tỉnh Bình Phước</option>
+                                <option value="Tỉnh Tây Ninh">Tỉnh Tây Ninh</option>
+                                <option value="Tỉnh Bình Dương">Tỉnh Bình Dương</option>
+                                <option value="Tỉnh Đồng Nai">Tỉnh Đồng Nai</option>
+                                <option value="Tỉnh Bà Rịa - Vũng Tàu">Tỉnh Bà Rịa - Vũng Tàu</option>
+                                <option value="Thành phố Hồ Chí Minh">Thành phố Hồ Chí Minh</option>
+                                <option value="Tỉnh Long An">Tỉnh Long An</option>
+                                <option value="Tỉnh Tiền Giang">Tỉnh Tiền Giang</option>
+                                <option value="Tỉnh Bến Tre">Tỉnh Bến Tre</option>
+                                <option value="Tỉnh Trà Vinh">Tỉnh Trà Vinh</option>
+                                <option value="Tỉnh Vĩnh Long">Tỉnh Vĩnh Long</option>
+                                <option value="Tỉnh Đồng Tháp">Tỉnh Đồng Tháp</option>
+                                <option value="Tỉnh An Giang">Tỉnh An Giang</option>
+                                <option value="Tỉnh Kiên Giang">Tỉnh Kiên Giang</option>
+                                <option value="Thành phố Cần Thơ">Thành phố Cần Thơ</option>
+                                <option value="Tỉnh Hậu Giang">Tỉnh Hậu Giang</option>
+                                <option value="Tỉnh Sóc Trăng">Tỉnh Sóc Trăng</option>
+                                <option value="Tỉnh Bạc Liêu">Tỉnh Bạc Liêu</option>
+                                <option value="Tỉnh Cà Mau">Tỉnh Cà Mau</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4" style="text-align: left;">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="" selected="selected" class="gf_placeholder">Quận/Huyện</option>
+                                <option value="First Choice">First Choice</option>
+                                <option value="Second Choice">Second Choice</option>
+                                <option value="Third Choice">Third Choice</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4" style="text-align: left;">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="" selected="selected" class="gf_placeholder">Phường/Xã/Thị Trấn</option>
+                                <option value="First Choice">First Choice</option>
+                                <option value="Second Choice">Second Choice</option>
+                                <option value="Third Choice">Third Choice</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- todo: THÔNG TIN NHẬN GIẤY BÁO KẾT QUẢ -->
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-mb-4" style="color: #2E3192;">
+                        <h4 class="title-section"><b>THÔNG TIN NHẬN GIẤY BÁO KẾT QUẢ</b></h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="exampleInput" class="form-label">Người nhận</label>
+                        <ul style="list-style-type: none;">
+                            <li>
+                                <input class="gfield-choice-input" name="input_31.1" type="checkbox" value="Thí sinh"
+                                    id="choice_32_31_1">
+                                <label for="choice_32_31_1" id="label_32_31_1">Thí sinh</label>
+                            </li>
+                            <li>
+                                <input class="gfield-choice-input" name="input_31.2" type="checkbox"
+                                    value="Phụ huynh/Người bảo trợ" id="choice_32_31_2">
+                                <label for="choice_32_31_2" id="label_32_31_2">Phụ huynh/Người bảo trợ</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <label for="exampleInput" class="form-label">Địa chỉ nhận</label>
+                        <div class="ginput_container ginput_container_checkbox">
+                            <ul style="list-style-type: none;">
+                                <li>
+                                    <input class="gfield-choice-input" name="input_32.1" type="checkbox"
+                                        value="Địa chỉ hộ khẩu thường trú" id="choice_32_32_1">
+                                    <label for="choice_32_32_1" id="label_32_32_1">Địa chỉ hộ khẩu thường
+                                        trú</label>
+                                </li>
+                                <li>
+                                    <input class="gfield-choice-input" name="input_32.2" type="checkbox" value="Khác"
+                                        id="choice_32_32_2">
+                                    <label for="choice_32_32_2" id="label_32_32_2">Khác</label>
+                                </li>
+                            </ul>
+                        </div>
+                        </li>
+                    </div>
+                </div>
+                <!-- !row TẢI LÊN GIẤY TỜ XÁC THỰC -->
+                <br>
+                <div class="row">
+                    <div class="col-mb-4" style="color: #2E3192;">
+                        <h4 class="title-section"><b>TẢI LÊN GIẤY TỜ XÁC THỰC</b></h4>
+                    </div>
+                </div>
+                <br>
+                <!-- ! row CCCD -->
+                <div class="row">
+                    <div class="col-3" style="text-align: left;">
+                        <label for="exampleInput" class="form-label">Ảnh CMT/CCCD mặt trước</label>
+                        <p>(bắt buộc)</p>
+                        <img src="./cccd-mt.png" alt="" width="268px" height="168px">
+                        <div class="ginput_container ginput_container_fileupload">
+                            <input name="input_42" id="input_32_42" type="file" class="medium"
+                                aria-describedby="validation_message_32_42 live_validation_message_32_42 extensions_message_32_42">
+                        </div>
+                    </div>
+                    <div class="col-3" style="text-align: left;">
+                        <label for="exampleInput" class="form-label">Ảnh CMT/CCCD mặt sau</label>
+                        <p>(bắt buộc)</p>
+                        <img src="./cccd-ms.png" alt="" width="268px" height="168px">
+                        <div class="ginput_container ginput_container_fileupload">
+                            <input name="input_42" id="input_32_42" type="file" class="medium"
+                                aria-describedby="validation_message_32_42 live_validation_message_32_42 extensions_message_32_42">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label for="exampleInput" class="form-label">Bản sao công chứng Bằng tốt nghiệp THPT</label>
+                        <p>Hoặc giấy chứng nhận tốt nghiệp tạm thời (không bắt buộc)</p>
+                        <img src="./bang-tot-nghiep-thpt.png" alt="" width="648px" height="168px">
+                        <div class="ginput_container ginput_container_fileupload">
+                            <input name="input_42" id="input_32_42" type="file" class="medium"
+                                aria-describedby="validation_message_32_42 live_validation_message_32_42 extensions_message_32_42">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- row -->
+                <br>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="ginput_container ginput_container_checkbox">
+                            <ul style="list-style-type: none;">
+                                <li>
+                                    <label for="choice_32_39_1" id="label_32_39">
+                                        <input name="cam_ket_xac_nhan" type="checkbox" value="cam kết lời khai"
+                                            id="choice_32_39_1"> Tôi xin cam đoan những lời khai của tôi trên phiếu đăng
+                                        ký này là đúng sự thật. Nếu sai tôi hoàn toàn chịu trách nhiệm và nhận xử lý
+                                        theo <a style="color: #1A0EAB;"
+                                            href="https://caodang.fpt.edu.vn/tuyen-sinh/quy-che.html"
+                                            target="_blank">Quy chế tuyển sinh</a> cao đẳng hiện hành</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <ul style="list-style-type: none;">
+                            <li>
+                                <input name="cam_ket_tai_chinh" type="checkbox" value="xác nhận cam kết tài chính"
+                                    id="choice_32_41">
+                                <label for="choice_32_41" id="label_32_41">Tôi đã đọc kỹ và cam kết tuân thủ Quy định
+                                    tài chính của nhà trường</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-5">
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-lg" style="background-color: black; color: white;">GỬI HỒ
+                            SƠ ĐĂNG KÝ</button>
+                    </div>
+            </article>
+            <aside class="col-1"></aside>
+        </div>
+        <footer class="row">
+
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
